@@ -1,4 +1,6 @@
-![Uploading image.png…]()
+
+![nike](![image](https://github.com/kubralkn/NIKE_WEBSITE/assets/160510842/4d005c71-0380-40b8-b11d-26f00b64822b)
+)
 
 ## Nike Store Website
 This project is developed using HTML, CSS, and JavaScript to create a web store for Nike products. The website provides various features allowing users to browse and purchase Nike products.
