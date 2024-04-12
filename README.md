@@ -1,16 +1,17 @@
+![Uploading image.png…]()
 
-##Nike Store Website
+## Nike Store Website
 This project is developed using HTML, CSS, and JavaScript to create a web store for Nike products. The website provides various features allowing users to browse and purchase Nike products.
 
 
-#Features
-#1. Product Slider
+# Features
+# 1. Product Slider
 There is a slider on the homepage showcasing different Nike products. Users can scroll through the slider to view different products and click on the "BUY NOW" button for each product to access detailed information.
 
-#2. Product Details
+# 2. Product Details
 Each product has a detailed card containing information and options. Users can select the product and then proceed to purchase by clicking the "Checkout" button.
 
-#3. Color and Size Options
+# 3. Color and Size Options
 Different color and size options are provided for each product. Users can customize their purchase by selecting their preferred color and size.
 
 
