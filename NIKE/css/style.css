@@ -23,7 +23,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 100px 0 50px;
 }
 
 .nav-top {
@@ -34,6 +33,8 @@ body {
   color: white;
   width: 50%;
   text-align: center;
+  padding: 20px 100px !important;
+  align-items: center;
 }
 
 .slider::after {
@@ -224,7 +225,7 @@ body {
   transform: scale(1.1);
 }
 .features p {
-  font-size: 20px;
+  font-size: 20px !important;
   font-weight: 600;
 }
 .two-container {
@@ -296,7 +297,7 @@ body {
 }
 .productDesc {
   color: rgb(98, 94, 94);
-  max-width: 800px;
+  max-width: 720px;
   font-size: 18px;
   padding: 10px 0 40px 0;
   margin-right: 65px;
@@ -455,6 +456,7 @@ video:hover {
 .classic h1 {
   margin: 100px 0 30px 0;
   text-align: center;
+  letter-spacing: 3px;
 }
 .special img {
   width: 30vw;
@@ -552,9 +554,12 @@ footer {
   font-weight: 300;
   font-size: 14px;
 }
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 200px) {
   .hamb {
     display: block !important;
+  }
+  .active {
+    display: flex;
   }
   .two-icon {
     display: none;
@@ -567,6 +572,187 @@ footer {
     margin-top: 10px !important;
   }
   .sliderTitle {
+    bottom: 12%;
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .navbar {
+    padding-right: 10% !important;
+  }
+  .nav-top {
+    padding: 20px 40px !important;
+  }
+  .buyButton {
+    bottom: 6% !important;
+    padding: 7px 15px !important;
+    font-size: 17px;
+  }
+  .leftTitle {
+    font-size: 40px !important;
+    line-height: 35px !important;
+    bottom: 75% !important;
+  }
+  .bottom-title {
+    display: none;
+  }
+  .features h1 {
+    font-size: 30px !important;
+  }
+  .features button {
+    font-size: 12px !important;
+    padding: 7px 20px;
+  }
+  .features {
+    gap: 10px;
+    margin: 50px 0;
+  }
+  .features p {
+    font-size: 15px !important;
+  }
+  .productImg {
+    width: 250px !important;
+  }
+  .product {
+    flex-wrap: wrap;
+  }
+  .productDesc {
+    font-size: 13px !important;
+    padding-bottom: 25px;
+  }
+  .productButton:hover {
+    transform: scale(1.1);
+  }
+  .productDetails {
+    padding-left: 60px;
+  }
+  .productPrice {
+    font-size: 10px !important;
+    padding-top: 20px;
+  }
+  .productTitle {
+    font-size: 30px;
+  }
+  .color {
+    width: 20px;
+    height: 20px;
+  }
+  .size {
+    font-size: 12px;
+    padding: 3px 10px;
+  }
+  .productButton {
+    font-size: 10px;
+    padding: 5px 20px;
+    margin: 10px 0px 20px 0;
+  }
+  .card {
+    width: 300px;
+    height: 520px;
+  }
+  .card-title {
+    font-size: 17px;
+    padding: 10px 0 20px 0;
+  }
+  .card input {
+    padding: 5px;
+  }
+  label {
+    font-size: 13px;
+  }
+  .red {
+    margin: 20px 0px;
+    justify-content: center;
+  }
+  .reditem {
+    width: 300px;
+    height: 250px;
+  }
+  .gallery h1 {
+    margin: 70px 0 20px 0;
+    font-size: 25px;
+  }
+  .purpleitem {
+    width: 300px;
+    height: 250px;
+  }
+  .purple {
+    margin: 20px 0px;
+    justify-content: center;
+  }
+  .classic img {
+    height: 80vh;
+  }
+  .classic h1 {
+    margin: 70px 0 20px 0;
+    font-size: 25px;
+  }
+  .special img {
+    width: 80vw;
+    height: 60vh;
+  }
+  .special {
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 30px;
+  }
+  .special h1 {
+    font-size: 25px;
+    margin-top: 50px;
+  }
+  .special-text {
+    font-size: 13px;
+  }
+  .special-text p {
+    margin: 30px 0;
+  }
+  .special-text button {
+    padding: 10px 40px;
+    font-size: 15px;
+  }
+  footer {
+    flex-wrap: wrap;
+  }
+  .footerLeft {
+    padding: 10px 50px;
+  }
+  .fMenuTitle {
+    font-size: 14px;
+    margin: 10px 0px;
+  }
+  .fList {
+    font-size: 12px;
+  }
+  .fIcons {
+    margin: 10px 0;
+  }
+  .footerRight {
+    padding: 20px 50px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .hamb {
+    display: block !important;
+  }
+  .features h1 {
+    font-size: 50px !important;
+  }
+  .features button {
+    font-size: 15px !important;
+  }
+  .features {
+    gap: 20px;
+  }
+  .two-icon {
+    display: none;
+  }
+  .nav_item {
+    display: none !important;
+  }
+  .sliderImg {
+    width: 500px !important;
+    margin-top: 10px !important;
+  }
+  .sliderTitle {
     bottom: 10%;
     font-size: 40px;
     line-height: 40px;
@@ -575,22 +761,69 @@ footer {
     padding-right: 10% !important;
   }
   .buyButton {
-    bottom: 3% !important;
+    bottom: 5% !important;
     padding: 7px 20px !important;
   }
   .leftTitle {
-    font-size: 20px !important;
-    line-height: 20px !important;
-    bottom: 75% !important;
+    font-size: 50px !important;
+    line-height: 40px !important;
+    bottom: 80% !important;
   }
   .bottom-title {
     display: none;
+  }
+  .productImg {
+    width: 300px !important;
+  }
+
+  .size {
+    padding: 5px 20px;
+    font-size: 15px !important;
+  }
+  .productButton {
+    padding: 10px 40px;
+    font-size: 15px;
+    margin-top: 20px !important;
+  }
+  .productTitle {
+    font-size: 45px !important;
+    margin-top: 10px;
+  }
+  .productDesc {
+    font-size: 16px !important;
+    padding: 10px 0 40px 0 !important;
+  }
+  .productPrice {
+    font-size: 25px !important;
+    margin-top: 10px;
+  }
+  .color {
+    width: 34px;
+    height: 34px;
+    margin-bottom: 20px;
+  }
+  .features {
+    gap: 30px !important;
+    margin: 80px 0;
+  }
+
+  .features h1 {
+    font-size: 60px !important;
+  }
+  .features button {
+    padding: 10px 50px !important;
+    font-size: 15px !important;
+  }
+  .features p {
+    font-size: 20px !important;
+    font-weight: 600;
   }
 }
 @media screen and (min-width: 768px) {
   .hamb {
     display: flex !important;
     margin-left: 25.3% !important;
+    padding-left: 20px;
   }
   .nav_item {
     display: none !important;
@@ -621,6 +854,56 @@ footer {
     line-height: 130px !important;
     bottom: 5% !important;
     text-align: left;
+    display: flex !important;
+  }
+  .two-icon {
+    display: flex;
+  }
+  .productImg {
+    width: 350px !important;
+  }
+
+  .size {
+    padding: 5px 20px;
+    font-size: 15px !important;
+  }
+  .productButton {
+    padding: 10px 40px;
+    font-size: 15px;
+    margin-top: 20px !important;
+  }
+  .productTitle {
+    font-size: 50px !important;
+    margin-top: 10px;
+  }
+  .productDesc {
+    font-size: 16px !important;
+    padding: 10px 0 40px 0 !important;
+  }
+  .productPrice {
+    font-size: 25px !important;
+    margin-top: 10px;
+  }
+  .color {
+    width: 34px;
+    height: 34px;
+    margin-bottom: 20px;
+  }
+  .features {
+    gap: 50px !important;
+    margin: 80px 0;
+  }
+
+  .features h1 {
+    font-size: 60px !important;
+  }
+  .features button {
+    padding: 10px 50px !important;
+    font-size: 15px !important;
+  }
+  .features p {
+    font-size: 20px !important;
+    font-weight: 600;
   }
 }
 @media only screen and (min-width: 900px) {
@@ -629,9 +912,10 @@ footer {
   }
   .hamb {
     display: flex !important;
+    padding-left: 10px;
   }
   .sliderImg {
-    width: 600px !important;
+    width: 620px !important;
     margin-top: 90px !important;
   }
   .leftTitle {
@@ -639,6 +923,7 @@ footer {
     bottom: 75% !important;
     line-height: 50px !important;
   }
+
   .sliderTitle {
     font-size: 55px !important;
     line-height: 55px;
@@ -646,6 +931,8 @@ footer {
   }
   .bottom-title {
     font-size: 130px !important;
+    display: flex;
+    bottom: 8% !important;
   }
   .buyButton {
     font-size: 20px;
@@ -658,13 +945,67 @@ footer {
   .nav-bottom {
     display: flex !important;
   }
+  .two-icon {
+    display: flex;
+  }
+  .productImg {
+    width: 400px !important;
+  }
+
+  .size {
+    padding: 5px 20px;
+    font-size: 20px !important;
+  }
+  .productButton {
+    padding: 10px 40px;
+    font-size: 20px;
+    margin-top: 20px !important;
+  }
+  .productTitle {
+    font-size: 60px !important;
+    margin-top: 10px;
+  }
+  .productDesc {
+    font-size: 18px !important;
+    padding: 10px 0 40px 0 !important;
+  }
+  .productPrice {
+    font-size: 30px !important;
+    margin-top: 10px;
+  }
+  .color {
+    width: 34px;
+    height: 34px;
+    margin-bottom: 20px;
+  }
+  .features {
+    gap: 50px !important;
+    margin: 80px 0;
+  }
+
+  .features h1 {
+    font-size: 60px !important;
+  }
+  .features button {
+    padding: 10px 50px !important;
+    font-size: 15px !important;
+  }
+  .features p {
+    font-size: 20px !important;
+    font-weight: 600;
+  }
 }
 @media only screen and (min-width: 1280px) {
   .hamb {
     display: none !important;
   }
+  .active {
+    display: block !important;
+    flex-direction: column;
+  }
+
   .sliderImg {
-    width: 630px !important;
+    width: 700px !important;
     margin-top: 90px !important;
   }
   .sliderTitle {
@@ -674,6 +1015,10 @@ footer {
   }
   .bottom-title {
     font-size: 150px !important;
+    display: block;
+  }
+  .two-icon {
+    display: flex;
   }
   .leftTitle {
     line-height: 55px !important;
@@ -686,12 +1031,65 @@ footer {
   .nav_item {
     display: block !important;
   }
+  .navbar {
+    padding: 0px !important;
+  }
+  .product {
+    flex-wrap: nowrap;
+  }
+  .productImg {
+    width: 550px !important;
+  }
+
+  .size {
+    padding: 5px 20px;
+    font-size: 20px !important;
+  }
+  .productButton {
+    padding: 10px 40px;
+    font-size: 20px;
+    margin-top: 20px !important;
+  }
+  .productTitle {
+    font-size: 70px !important;
+    margin-top: 50px;
+  }
+  .productDesc {
+    font-size: 18px !important;
+    padding: 10px 0 40px 0 !important;
+  }
+  .productPrice {
+    font-size: 30px !important;
+    margin-top: 60px;
+  }
+  .color {
+    width: 34px;
+    height: 34px;
+    margin-bottom: 20px;
+  }
+  .features {
+    gap: 50px !important;
+    margin: 80px 0;
+  }
+
+  .features h1 {
+    font-size: 70px !important;
+  }
+  .features button {
+    padding: 10px 50px !important;
+    font-size: 20px !important;
+  }
+  .features p {
+    font-size: 20px !important;
+    font-weight: 600;
+  }
 }
 @media only screen and (min-width: 1440px) {
   .sliderTitle {
     font-size: 80px !important;
     line-height: 75px !important;
     bottom: 15% !important;
+    right: 7%;
   }
   .searchbox {
     display: flex;
@@ -699,19 +1097,147 @@ footer {
   .buyButton {
     padding: 13px 75px !important;
     bottom: 8% !important;
+    right: 7%;
   }
   .leftTitle {
     font-size: 110px !important;
     line-height: 65px !important;
   }
   .bottom-title {
-    font-size: 160px !important;
+    font-size: 170px !important;
+    display: block;
+    bottom: 8% !important;
   }
   .sliderImg {
-    width: 710px !important;
+    width: 770px !important;
     margin-top: 90px !important;
   }
   .hamb {
     display: none !important;
+  }
+  .two-icon {
+    display: flex;
+  }
+  .navbar {
+    margin-right: 0px !important;
+  }
+  .nav-top {
+    padding: 20px 120px !important;
+  }
+  .productImg {
+    width: 600px !important;
+  }
+
+  .size {
+    padding: 5px 20px;
+    font-size: 20px !important;
+  }
+  .productButton {
+    padding: 10px 40px;
+    font-size: 20px;
+    margin-top: 20px !important;
+  }
+  .productTitle {
+    font-size: 70px !important;
+    margin-top: 30px;
+  }
+  .productDesc {
+    font-size: 20px !important;
+    padding: 10px 0 70px 0 !important;
+  }
+  .productPrice {
+    font-size: 30px !important;
+    margin-top: 60px;
+  }
+  .color {
+    width: 34px;
+    height: 34px;
+    margin-bottom: 20px;
+  }
+  .features {
+    gap: 50px !important;
+    margin: 80px 0;
+  }
+  .features h1 {
+    font-size: 70px !important;
+  }
+  .features button {
+    padding: 10px 50px !important;
+    font-size: 20px !important;
+  }
+  .features p {
+    font-size: 20px !important;
+    font-weight: 600;
+  }
+  .card {
+    width: 500px;
+    height: 600px;
+  }
+  .card-title {
+    font-size: 20px;
+    padding: 20px 0;
+  }
+  .card input {
+    padding: 10px;
+    margin: 10px 0px;
+  }
+  label {
+    font-size: 16px;
+  }
+  .red {
+    gap: 60px;
+    margin: 20px 100px;
+  }
+  .reditem {
+    width: 400px;
+    height: 400px;
+  }
+  .gallery h1 {
+    margin: 100px 0 30px 0;
+    font-size: 35px;
+  }
+  .purpleitem {
+    width: 400px;
+    height: 400px;
+  }
+  .purple {
+    gap: 60px;
+    margin: 20px 100px;
+  }
+  .classic img {
+    width: 100vw;
+    height: 80vh;
+  }
+  .classic h1 {
+    margin: 100px 0 30px 0;
+    letter-spacing: 3px;
+    font-size: 35px;
+  }
+  .special img {
+    width: 30vw;
+    height: 100vh;
+  }
+  .special h1 {
+    font-size: 30px;
+  }
+  .special {
+    padding: 100px 120px;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .special-text p {
+    font-size: 25px;
+    margin: 70px 0;
+  }
+  .special-text button {
+    padding: 12px 40px;
+    font-size: 20px;
+  }
+  .footerLeft {
+    justify-content: space-around;
+  }
+  .fMenuTitle {
+    font-size: 18px;
   }
 }
